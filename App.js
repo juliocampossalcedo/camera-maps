@@ -24,7 +24,6 @@ export default function App() {
       setDbInitialized(true)
       SplashScreen.hideAsync();
     }).catch((err) => {
-      console.log(err);
     });
   }, [])
 

@@ -17,7 +17,6 @@ export function init() {
       )`,
         [],
         () => {
-          console.log("RESOLVE");
           resolve();
         },
         (_, error) => {
@@ -43,7 +42,6 @@ export function insertPlace(place) {
           place.location.lng,
         ],
         (_, result) => {
-          console.log("result 44", result);
           resolve(result);
         },
         (_, error) => {
